@@ -14,10 +14,11 @@
     "name": "Martin Winkler",
     "url": "https://github.com/teetotum"
   },
-  "browser": "dist/bundle.js",
   "type": "module",
+  "browser": "dist/bundle.js",
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
+  "files": [],
   "scripts": {
     "bundle": "rollup --config rollup.config.mjs",
     "serve": "rollup --config rollup.config.serve.mjs",
