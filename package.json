@@ -1,6 +1,19 @@
 {
   "name": "mock-switch",
   "version": "0.1.0",
+  "description": "A minimalistic UI to enable switching between your prepared mock responses during runtime. Can be used with any client-side mock setup.",
+  "keywords": [
+    "mock",
+    "tool"
+  ],
+  "homepage": "https://github.com/teetotum/mock-switch",
+  "bugs": "https://github.com/teetotum/mock-switch/issues",
+  "repository": "https://github.com/teetotum/mock-switch",
+  "license": "MIT",
+  "author": {
+    "name": "Martin Winkler",
+    "url": "https://github.com/teetotum"
+  },
   "browser": "dist/bundle.js",
   "type": "module",
   "module": "dist/module.js",
@@ -9,6 +22,10 @@
     "bundle": "rollup --config rollup.config.mjs",
     "serve": "rollup --config rollup.config.serve.mjs",
     "proof": "node proof.js"
+  },
+  "dependencies": {
+    "preact": "*",
+    "clsx": "*"
   },
   "devDependencies": {
     "rollup": "*",
@@ -20,7 +37,6 @@
     "sass": "*",
     "rollup-plugin-jsx": "*",
     "rollup-plugin-serve": "*",
-    "preact": "*",
     "@rollup/plugin-node-resolve": "*"
   }
 }

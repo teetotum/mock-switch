@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="module">
+      import { mockSwitch } from "./dist/bundle.js";
+      const result = mockSwitch("/some/path", ["option #1", "option #2"]);
+      const out = document.getElementById("output");
+      out.value = result;
+    </script>
+  </head>
+  <body>
+    <output id="output"></output>
+  </body>
+</html>

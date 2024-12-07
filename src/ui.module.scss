@@ -1,0 +1,103 @@
+.root {
+  font-family: sans-serif;
+  --popup-box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 25%);
+}
+
+.modal {
+  background-color: Canvas;
+  padding: none;
+  border: none;
+  max-height: 100%;
+  height: 100%;
+  margin-right: 0;
+  box-shadow: var(--popup-box-shadow);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+}
+
+.entries {
+  display: grid;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.qualifier {
+  margin-bottom: 4px;
+}
+
+.choices {
+  width: 100%;
+}
+
+.closeButton {
+  margin-top: auto;
+  align-self: center;
+}
+
+.controls {
+  position: fixed;
+  display: flex;
+
+  &.dockedTop {
+    top: 32px;
+
+    .settings {
+      top: 100%;
+    }
+  }
+
+  &.dockedBottom {
+    bottom: 32px;
+
+    .settings {
+      bottom: 100%;
+    }
+  }
+
+  &.dockedLeft {
+    left: 32px;
+
+    .settings {
+      left: 0;
+    }
+  }
+
+  &.dockedRight {
+    right: 32px;
+
+    .settings {
+      right: 0;
+    }
+  }
+}
+
+.settingLabel {
+  white-space: nowrap;
+}
+
+.settingsButton {
+}
+
+.settings {
+  background-color: Canvas;
+  padding: 16px;
+  position: absolute;
+  display: none;
+  box-shadow: var(--popup-box-shadow);
+}
+
+.showSettings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tetherbox {
+  display: grid;
+  position: relative;
+}

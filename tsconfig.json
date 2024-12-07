@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "target": "ES6",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "types": ["preact"]
+  }
+}
