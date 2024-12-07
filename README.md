@@ -4,7 +4,7 @@ This package consists of a minimalistic UI and a simple API to integrate with yo
 The UI enables you to switch between your prepared mock responses during runtime; where previously you would have had to comment-in and comment-out prepared lines of code in your source file, and rebuild your front-end to switch between different scenarios of mocked responses.
 This package can be used with any client-side mock setup; no matter if you use [mock-service-worker](https://www.npmjs.com/package/msw), [fetch-mock](https://www.npmjs.com/package/fetch-mock), [xhr-mock](https://www.npmjs.com/package/xhr-mock), or [axios-response-mock](https://www.npmjs.com/package/axios-response-mock).
 
-The `mock-switch` package is useful when demoing your front-end to show how it behaves in different scenarios and useful during development to trigger all front-end states your component is supposed to handle, but it is not meant to be used with mocks in automatic test runs which usually run headless anyway, and even when not, are not designed to query for ad-hoc user input.
+The `mock-switch` package is useful when demoing your front-end to show how it behaves in different scenarios and useful during development to trigger all front-end states your component is supposed to handle, but it is not meant to be used with mocks in automated tests which usually run headless anyway, and even when not, are not designed to query for ad-hoc user input.
 
 You do not need to integrate `mock-switch` with all of your prepared mocks and all scenarios; you can add it selectively where you need the choices to be selectable during runtime.
 
