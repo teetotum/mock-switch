@@ -16,7 +16,9 @@
   },
   "main": "dist/bundle.js",
   "types": "dist/types.d.ts",
-  "files": [],
+  "files": [
+    "dist/types.d.ts"
+  ],
   "scripts": {
     "bundle": "rollup --config rollup.config.mjs",
     "serve": "rollup --config rollup.config.serve.mjs",
