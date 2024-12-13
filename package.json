@@ -1,6 +1,6 @@
 {
   "name": "mock-switch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A minimalistic UI to enable switching between your prepared mock responses during runtime. Can be used with any client-side mock setup.",
   "keywords": [
     "mock",
@@ -14,9 +14,7 @@
     "name": "Martin Winkler",
     "url": "https://github.com/teetotum"
   },
-  "type": "module",
-  "browser": "dist/bundle.js",
-  "module": "dist/module.js",
+  "main": "dist/bundle.js",
   "types": "dist/types.d.ts",
   "files": [],
   "scripts": {
@@ -38,6 +36,8 @@
     "sass": "*",
     "rollup-plugin-jsx": "*",
     "rollup-plugin-serve": "*",
-    "@rollup/plugin-node-resolve": "*"
+    "@rollup/plugin-node-resolve": "*",
+    "rollup-plugin-copy": "*",
+    "rollup-plugin-delete": "*"
   }
 }
